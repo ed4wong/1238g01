@@ -21,7 +21,7 @@
             </value>
             <next>
               <block type="oled_linerect" id="101">
-                <field name="OBJECT">LINE</field>
+                <field name="OBJECT">RECT</field>
                 <next>
                   <block type="movement_stop" id="68"></block>
                 </next>
