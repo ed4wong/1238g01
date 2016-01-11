@@ -20,12 +20,7 @@
               </block>
             </value>
             <next>
-              <block type="oled_linerect" id="7">
-                <field name="OBJECT">RECT</field>
-                <next>
-                  <block type="movement_stop" id="8"></block>
-                </next>
-              </block>
+              <block type="movement_stop" id="8"></block>
             </next>
           </block>
         </next>
