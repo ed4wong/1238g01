@@ -9,22 +9,37 @@
         </value>
         <value name="BOTHMOVRIGHT">
           <block type="math_number" id="223">
-            <field name="NUM">80</field>
+            <field name="NUM">-80</field>
           </block>
         </value>
         <next>
-          <block type="robot_delay" id="225" inline="true">
+          <block type="robot_delay" id="269" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="233">
-                <field name="NUM">1000</field>
+              <block type="math_number" id="276">
+                <field name="NUM">5000</field>
               </block>
             </value>
             <next>
-              <block type="movement_left" id="27">
+              <block type="movement_forward" id="243">
                 <next>
-                  <block type="movement_reverse" id="73">
+                  <block type="movement_setmotors" id="253" inline="true">
+                    <value name="BOTHMOVLEFT">
+                      <block type="math_number" id="260">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                    <value name="BOTHMOVRIGHT">
+                      <block type="math_number" id="267">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="movement_right" id="39">
+                      <block type="robot_delay" id="225" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="233">
+                            <field name="NUM">5000</field>
+                          </block>
+                        </value>
                         <next>
                           <block type="led_select" id="160" inline="true">
                             <field name="ACTION">FLASH</field>
