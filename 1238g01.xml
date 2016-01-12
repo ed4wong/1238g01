@@ -13,21 +13,30 @@
           </block>
         </value>
         <next>
-          <block type="movement_left" id="27">
+          <block type="robot_delay" id="225" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="233">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_reverse" id="73">
+              <block type="movement_left" id="27">
                 <next>
-                  <block type="movement_right" id="39">
+                  <block type="movement_reverse" id="73">
                     <next>
-                      <block type="led_select" id="160" inline="true">
-                        <field name="ACTION">FLASH</field>
-                        <value name="LED">
-                          <block type="math_number" id="167">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
+                      <block type="movement_right" id="39">
                         <next>
-                          <block type="movement_stop" id="192"></block>
+                          <block type="led_select" id="160" inline="true">
+                            <field name="ACTION">FLASH</field>
+                            <value name="LED">
+                              <block type="math_number" id="167">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stop" id="192"></block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
