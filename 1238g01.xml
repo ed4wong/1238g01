@@ -1,21 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="17" x="56" y="41">
     <next>
-      <block type="movement_left" id="27">
+      <block type="movement_setmotors" id="208" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="216">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="223">
+            <field name="NUM">80</field>
+          </block>
+        </value>
         <next>
-          <block type="movement_reverse" id="73">
+          <block type="movement_left" id="27">
             <next>
-              <block type="movement_right" id="39">
+              <block type="movement_reverse" id="73">
                 <next>
-                  <block type="led_select" id="160" inline="true">
-                    <field name="ACTION">FLASH</field>
-                    <value name="LED">
-                      <block type="math_number" id="167">
-                        <field name="NUM">10</field>
-                      </block>
-                    </value>
+                  <block type="movement_right" id="39">
                     <next>
-                      <block type="movement_stop" id="192"></block>
+                      <block type="led_select" id="160" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="167">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stop" id="192"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
